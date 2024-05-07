@@ -1,7 +1,7 @@
 FROM geonetwork/gn-cloud-ogc-api-records-service:4.4.3-0
 
-COPY customisation\application.yml ogcapiconfig/.     
-COPY customisation\bootstrap.yml ogcapiconfig/.  
+COPY customisation/application.yml ogcapiconfig/.     
+COPY customisation/bootstrap.yml ogcapiconfig/.  
 
 ENV SPRING_PROFILES_ACTIVE=standalone \
     SPRING_DATASOURCE_URL=jdbc:postgresql://${DB_HOST}:${POSTGRES_CONTAINER_PORT}/${POSTGRES_DATABASE_NAME_V4} \
