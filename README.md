@@ -1,0 +1,1 @@
+# geonetwork-ogcapi-records-plugin
